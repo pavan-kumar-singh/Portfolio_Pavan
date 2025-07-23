@@ -117,3 +117,28 @@
   opacity: 0.9;
   transform: translateY(-2px);
 }
+
+/* Shared Grid Layout for Skills & Projects */
+.skills-row,
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .skills-row,
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile View: Force 2 columns */
+@media (max-width: 480px) {
+  .skills-row,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

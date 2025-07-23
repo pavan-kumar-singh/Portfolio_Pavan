@@ -52,3 +52,16 @@
    font-size: 1.8rem;
    color: var(--color-accent);
  }
+
+ .footer {
+   padding: 1rem;
+   text-align: center;
+   font-size: 0.9rem;
+ }
+ 
+ @media (max-width: 480px) {
+   .footer {
+     font-size: 0.8rem;
+   }
+ }
+ 

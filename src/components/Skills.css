@@ -23,22 +23,29 @@
   display: inline-block;
 }
 
-/* Skills Grid Layout */
+/* Default Grid Layout */
 .skills-row {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 20px;
   justify-items: center;
 }
 
-/* Skill Card - Same as Project Card */
+/* Force 2 Columns on Mobile (<=600px) */
+@media (max-width: 600px) {
+  .skills-row {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Skill Card */
 .skill-card {
   background: rgba(40, 40, 40, 0.7);
   backdrop-filter: blur(8px);
   border-radius: 15px;
   padding: 20px;
   width: 70%;
-  max-width: 150px;
+  max-width: 140px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -51,17 +58,16 @@
   border: 1px solid var(--color-accent);
 }
 
-/* Icons inside skills */
+/* Skill Icon */
 .skill-card img {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   margin-bottom: 10px;
-  object-fit: contain;
 }
 
 .skill-card p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #fff;
   font-weight: 500;
 }

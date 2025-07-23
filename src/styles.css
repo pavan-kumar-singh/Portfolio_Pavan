@@ -1,5 +1,12 @@
 @import './colors.css';
 
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
 .section-heading,
 h2, h3 {
   color: #fff; /* Bright white for better contrast */
