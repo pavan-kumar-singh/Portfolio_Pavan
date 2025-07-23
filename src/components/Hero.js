@@ -9,7 +9,7 @@ const Hero = () => (
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
   >
-    <img src="/profile.jpg" alt="Profile" className="profile-img" />
+    <img src={`${process.env.PUBLIC_URL}/profile.jpg`} alt="Profile" className="profile-img" />
     <div className="hero-text">
       <h2>Hello, I'm <span>Pavankumar Singh</span></h2>
       <p>
