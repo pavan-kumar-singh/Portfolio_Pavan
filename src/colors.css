@@ -1,0 +1,7 @@
+:root {
+  --color-primary: rgba(34, 34, 34, 0.8);   /* Dark glass background */
+  --color-accent: #FB9E3A;                  /* Warm orange accent */
+  --color-dark-accent: #E6521F;             /* Strong accent */
+  --color-light: rgba(255, 255, 255, 0.1);  /* Light transparent overlay */
+  --text-color: #f1f1f1;                    /* Light text on dark background */
+}

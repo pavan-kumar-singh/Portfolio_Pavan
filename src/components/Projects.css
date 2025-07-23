@@ -1,0 +1,119 @@
+.projects-section {
+  text-align: center;
+  padding: 2.5rem;
+  margin: 50px auto 0;
+  width: 90%;
+  max-width: 1200px; /* Matches hero and other sections */
+  background: rgba(20, 20, 20, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-dark-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Optional Section Title Style */
+.section-title {
+  font-family: var(--font-primary);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 70px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-dark-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
+}
+
+.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-dark-accent));
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.project-card {
+  background: rgba(40, 40, 40, 0.7);
+  backdrop-filter: blur(8px);
+  border-radius: 15px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--color-accent);
+}
+
+.project-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn.live {
+  background: linear-gradient(90deg, var(--color-accent), var(--color-dark-accent));
+}
+
+.btn.code {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--color-accent);
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}

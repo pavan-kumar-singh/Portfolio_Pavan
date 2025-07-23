@@ -1,0 +1,73 @@
+@import './colors.css';
+
+.section-heading,
+h2, h3 {
+  color: #fff; /* Bright white for better contrast */
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6); /* Adds contrast on dark bg */
+}
+
+.section-heading .icon {
+  color: var(--color-accent); /* Accent color for icons */
+  font-size: 1.8rem;
+}
+
+
+section {
+  margin-top: 50px;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #1a1a1a, #2a2a2a);
+  color: var(--text-color);
+}
+
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.glass:hover {
+  transform: translateY(-5px);
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+h2 {
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background: var(--color-accent);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: var(--color-dark-accent);
+  transform: scale(1.05);
+}
