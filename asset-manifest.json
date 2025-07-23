@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Portfolio_Pavan/static/css/main.5291dc4c.css",
+    "main.css": "/Portfolio_Pavan/static/css/main.568837f4.css",
     "main.js": "/Portfolio_Pavan/static/js/main.3edfd919.js",
     "index.html": "/Portfolio_Pavan/index.html",
-    "main.5291dc4c.css.map": "/Portfolio_Pavan/static/css/main.5291dc4c.css.map",
+    "main.568837f4.css.map": "/Portfolio_Pavan/static/css/main.568837f4.css.map",
     "main.3edfd919.js.map": "/Portfolio_Pavan/static/js/main.3edfd919.js.map"
   },
   "entrypoints": [
-    "static/css/main.5291dc4c.css",
+    "static/css/main.568837f4.css",
     "static/js/main.3edfd919.js"
   ]
 }
