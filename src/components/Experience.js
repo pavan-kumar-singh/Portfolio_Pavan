@@ -7,14 +7,14 @@ const experiences = [
   {
     role: "Technical Support Engineer",
     company: "Altruist Technologies",
-    duration: "2022 - 2023",
+    duration: "2023 - 2024",
     description:
       "Resolved Airtel Wi-Fi issues ensuring high customer satisfaction. Collaborated with cross-functional teams to improve service quality.",
   },
   {
     role: "Java Full-Stack Developer Intern",
     company: "KodNest Technologies",
-    duration: "2021 - 2022",
+    duration: "2022 - 2023",
     description:
       "Developed a secure e-commerce platform using Java, Spring Boot, and MySQL. Implemented responsive UI using React and CSS.",
   },

@@ -4,6 +4,7 @@
   justify-content: flex-start; /* Profile stays on the left */
   gap: 100px;
   flex-wrap: wrap;
+  width: 90%;
   padding: 2rem;
   margin: 50px auto 0;
   width: 90%;

@@ -4,6 +4,9 @@
   margin: 20px auto 0;
   width: 90%;
   max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   /* Glassmorphic design matching hero & skills */
   background: rgba(20, 20, 20, 0.7);
@@ -13,13 +16,15 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
+  text-align: center;
 }
 
 .header h1 {
   font-size: 5rem;
   font-family: 'Lavishly Yours', cursive;
-  text-align: center;
   color: #161616; /* Dark text for readability */
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 
   /* Outer glow */
   text-shadow:
@@ -28,8 +33,6 @@
     0 0 20px var(--color-dark-accent),
     0 0 30px var(--color-dark-accent),
     0 0 40px rgba(255, 150, 50, 0.8);
-  letter-spacing: 1px;
-  margin-bottom: 10px;
 }
 
 .header p {
@@ -41,22 +44,29 @@
 /* Navigation Links */
 .nav-links {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
-  margin: 10px 0;
+  gap: 15px;
+  margin-top: 15px;
 }
 
 .nav-links a {
+  padding: 10px 0;
+  width: 120px; /* Equal-sized buttons */
+  border-radius: 25px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-dark-accent));
   text-decoration: none;
-  color: #f1f1f1;
+  color: #fff;
   font-weight: 600;
-  font-size: 1.1rem;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: var(--color-accent);
-  text-shadow: 0 0 8px var(--color-dark-accent);
+  background: linear-gradient(90deg, var(--color-dark-accent), var(--color-accent));
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Social Icons */
@@ -68,8 +78,8 @@
   margin: 0 8px;
   font-size: 1.5rem;
   color: #f1f1f1;
-  transition: color 0.3s ease, transform 0.2s;
   text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s;
 }
 
 .social a:hover {
@@ -88,66 +98,17 @@
   color: var(--color-accent);
   text-decoration: none;
   margin: 0 5px;
-  transition: color 0.3s ease;
   font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 
 .contact-info a:hover {
   color: var(--color-dark-accent);
 }
 
-.nav-links {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 15px;
-  flex-wrap: wrap;
-}
-
-.nav-links a {
-  padding: 8px 16px;
-  border-radius: 25px;
-  padding: 10px 0; /* Vertical padding only */
-  width: 120px; /* Fixed width for equal-sized buttons */
-  background: linear-gradient(90deg, var(--color-accent), var(--color-dark-accent));
-  text-decoration: none;
-  color: #fff;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.nav-links a:hover {
-  background: linear-gradient(90deg, var(--color-dark-accent), var(--color-accent));
-  transform: translateY(-2px) scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  text-align: center;
-}
-
-.nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-.nav-links a {
-  padding: 8px 12px;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.1);
-}
-
+/* Mobile Responsive */
 @media (max-width: 480px) {
   .header h1 {
     font-size: 2rem;
   }
 }
-

@@ -1,6 +1,7 @@
 .footer {
    margin-top: 50px;
    padding: 2rem;
+   width: 95%;
    text-align: center;
    background: rgba(20, 20, 20, 0.7);
    backdrop-filter: blur(10px);
